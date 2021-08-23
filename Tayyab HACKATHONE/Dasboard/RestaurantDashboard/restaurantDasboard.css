@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto'!important;
+    background-color: #f1f0ec;
+}
+
+.navbar-brand {
+    font-size: 1.7em !important;
+    font-weight: bolder;
+    color: #fff !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.banner {
+    background-image: url("../../images/ResBAackImg.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0px 280px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 1;
+    text-align: center !important;
+}
+
+.welcomeuser {
+    /* font-weight: bold; */
+    color: #fff !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 3em !important;
+    font-weight: bold !important;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.card {
+    width: 270px !important;
+    height: 205px !important;
+}
+
+.scrool {
+    background-color: rgb(80, 74, 74);
+}
+
+.para {
+    color: black;
+    font-size: 1.22em;
+    font-weight: 500;
+}
+
+.welcomeuser1 {
+    color: #fff !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 2em !important;
+    font-weight: bold !important;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+    .welcomeuser {
+        /* font-weight: bold; */
+        font-size: 2em !important;
+    }
+}

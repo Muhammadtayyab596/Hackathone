@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASH BOARD User</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./userDashboard.css">
+
+
+    <!-- bootrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- fontAwsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand">
+                <i class="fas fa-hamburger"></i> WELCOME
+                <span id="username"></span>
+            </a>
+            <div class="ms-auto">
+                <!-- <button class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#" type="submit">ADD</button> -->
+                <!-- <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ADD </button> -->
+
+
+
+                <button class="btn btn-primary me-auto" onclick="logOut()">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <link rel="stylesheet" href=""> -->
+
+    <div class="banner">
+        <div class="container">
+            <h1 class="welcomeuser text-center">WELCOME TO FOODIES DELIVERY <span id="resName"></span></h1>
+            <h1 class="welcomeuser1 text-center">WELCOME TO OUR CUSTOMER PORTAL <span id="resName"></span></h1>
+        </div>
+    </div>
+
+
+    <!-- <div class="container">
+        <h1 class="text-center my-5 fw-bold">WELCOME TO FOODIES</h1>
+    </div> -->
+
+
+    <div class="container ">
+
+        <div class="row mx-auto" id="disPlayCard">
+            <h1 class="text-center my-5 fw-bold">WELCOME TO FOODIES</h1>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- modal -->
+    <!-- modal Customer -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ADD YOUR CARD</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="addCard(event)">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Restaurant Name</label>
+                            <input type="text" class="form-control" id="restaurantName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Description</label>
+                            <textarea class="form-control" id="description"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="file" class="form-control" id="imageFile">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary w-50" data-bs-dismiss="modal">ADD</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- FIRBASE -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAI5lMKxdSRGQ15tMcqlJDZZn0Fxzl1hn8",
+            authDomain: "foodies-ab35d.firebaseapp.com",
+            projectId: "foodies-ab35d",
+            storageBucket: "foodies-ab35d.appspot.com",
+            messagingSenderId: "877147695254",
+            appId: "1:877147695254:web:f969c05008c23c1497fab7"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+
+
+
+
+
+</body>
+<script src="./userDashboard.js"></script>
+
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto'!important;
+    background-color: #f1f0ec;
+}
+
+.navbar-brand {
+    font-size: 1.8em !important;
+    font-weight: bold;
+    color: #fff !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.banner {
+    background-image: url("../../images/ResBAackImg.jpg");
+    width: 100%;
+    min-height: 60vh;
+    background-position: center;
+    background-size: cover;
+    padding: 220px 0px 280px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 1;
+}
+
+.welcomeuser {
+    /* font-weight: bold; */
+    color: #fff !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 3em !important;
+    font-weight: bold !important;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.card {
+    width: 270px !important;
+    height: 205px !important;
+}
+
+.scrool {
+    background-color: black;
+}
+
+.card {
+    height: 200px !important;
+}
+
+.card img {
+    height: 200px !important;
+    /* margin-top: 20px !important; */
+}
+
+.mal {
+    margin-top: 230px !important;
+    /* border: 1px saddlebrown !important; */
+}
+
+.containermx {
+    margin-top: 100px!important;
+}
+
+.welcomeuser1 {
+    color: #fff !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 2em !important;
+    font-weight: bold !important;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
